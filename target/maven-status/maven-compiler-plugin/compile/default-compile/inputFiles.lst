@@ -1,4 +1,10 @@
 /Users/ahmedbenrhaiem/MyFolder@Me/WWSIS/Semester 6/Team Project/SSS/src/main/java/com/wwsis/sss/App.java
-/Users/ahmedbenrhaiem/MyFolder@Me/WWSIS/Semester 6/Team Project/SSS/src/main/java/pl/wwsis/sss/model/Grade.java
-/Users/ahmedbenrhaiem/MyFolder@Me/WWSIS/Semester 6/Team Project/SSS/src/main/java/pl/wwsis/sss/model/Student.java
-/Users/ahmedbenrhaiem/MyFolder@Me/WWSIS/Semester 6/Team Project/SSS/src/main/java/pl/wwsis/sss/model/Subject.java
+/Users/ahmedbenrhaiem/MyFolder@Me/WWSIS/Semester 6/Team Project/SSS/src/main/java/com/wwsis/sss/dao/GradeDao.java
+/Users/ahmedbenrhaiem/MyFolder@Me/WWSIS/Semester 6/Team Project/SSS/src/main/java/com/wwsis/sss/dao/StudentDao.java
+/Users/ahmedbenrhaiem/MyFolder@Me/WWSIS/Semester 6/Team Project/SSS/src/main/java/com/wwsis/sss/dao/SubjectDao.java
+/Users/ahmedbenrhaiem/MyFolder@Me/WWSIS/Semester 6/Team Project/SSS/src/main/java/com/wwsis/sss/dao/impl/GradeDaoImpl.java
+/Users/ahmedbenrhaiem/MyFolder@Me/WWSIS/Semester 6/Team Project/SSS/src/main/java/com/wwsis/sss/dao/impl/StudentDaoImpl.java
+/Users/ahmedbenrhaiem/MyFolder@Me/WWSIS/Semester 6/Team Project/SSS/src/main/java/com/wwsis/sss/dao/impl/SubjectDaoImpl.java
+/Users/ahmedbenrhaiem/MyFolder@Me/WWSIS/Semester 6/Team Project/SSS/src/main/java/com/wwsis/sss/model/Grade.java
+/Users/ahmedbenrhaiem/MyFolder@Me/WWSIS/Semester 6/Team Project/SSS/src/main/java/com/wwsis/sss/model/Student.java
+/Users/ahmedbenrhaiem/MyFolder@Me/WWSIS/Semester 6/Team Project/SSS/src/main/java/com/wwsis/sss/model/Subject.java
