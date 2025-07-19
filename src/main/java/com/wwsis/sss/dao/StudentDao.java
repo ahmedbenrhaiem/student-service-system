@@ -1,6 +1,6 @@
 package com.wwsis.sss.dao;
 
-import com.wwsis.sss.entity.Student;
+import com.wwsis.sss.model.Student;
 import java.util.List;
 
 public interface StudentDao {

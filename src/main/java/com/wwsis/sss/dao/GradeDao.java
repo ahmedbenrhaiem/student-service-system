@@ -1,6 +1,6 @@
 package com.wwsis.sss.dao;
 
-import com.wwsis.sss.entity.Grade;
+import com.wwsis.sss.model.Grade;
 import java.util.List;
 
 public interface GradeDao {

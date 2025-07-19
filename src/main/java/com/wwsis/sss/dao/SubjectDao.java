@@ -1,6 +1,6 @@
 package com.wwsis.sss.dao;
 
-import com.wwsis.sss.entity.Subject;
+import com.wwsis.sss.model.Subject;
 import java.util.List;
 
 public interface SubjectDao {
