@@ -1,0 +1,103 @@
+
+
+STUDENT
+┌─────────────────────────────┐
+│         STUDENT             │
+├─────────────────────────────┤
+│ PK  student_id              │
+│     first_name              │
+│     last_name               │
+│     email                   │
+│     password_hash           │
+│     is_blocked              │
+└─────────────────────────────┘
+        | 1
+        |
+        |--------------------------┐
+        |                          |
+        ↓                          ↓
+┌────────────────────┐   ┌────────────────────┐
+│    ENROLLMENT      │   │     GRADE          │
+├────────────────────┤   ├────────────────────┤
+│ PK  enrollment_id  │   │ PK  grade_id       │
+│ FK  student_id     │   │ FK  student_id     │
+│ FK  subject_id     │   │ FK  subject_id     │
+│     enroll_date    │   │     grade          │
+└────────────────────┘   │     graded_by      │
+                         │     grade_date     │
+                         └────────────────────┘
+
+
+
+SUBJECT
+┌──────────────────────────────┐
+│           SUBJECT            │
+├──────────────────────────────┤
+│ PK  subject_id               │
+│     name                     │
+│     description              │
+│     lecturer                 │
+│     semester                 │
+│     schedule_time            │
+└──────────────────────────────┘
+        | 1
+        |
+        |--------------------------┐
+        ↓                          ↓
+┌────────────────────┐   ┌────────────────────┐
+│   ENROLLMENT       │   │     GRADE          │
+│  (see above)       │   │  (see above)       │
+└────────────────────┘   └────────────────────┘
+
+
+TIMETABLE
+┌─────────────────────────────┐
+│       TIMETABLE_ENTRY       │
+├─────────────────────────────┤
+│ PK  entry_id                │
+│ FK  student_id              │
+│ FK  subject_id              │
+│     day                     │
+│     time_slot               │
+└─────────────────────────────┘
+
+
+TUITION_PAYMENT
+┌─────────────────────────────┐
+│      TUITION_PAYMENT        │
+├─────────────────────────────┤
+│ PK  payment_id              │
+│ FK  student_id              │
+│     amount                  │
+│     payment_date            │
+│     semester                │
+│     status                  │
+└─────────────────────────────┘
+
+
+LIBRARY_RECORD
+┌─────────────────────────────┐
+│       LIBRARY_RECORD        │
+├─────────────────────────────┤
+│ PK  record_id               │
+│ FK  student_id              │
+│     item_title              │
+│     borrow_date             │
+│     due_date                │
+│     status                  │
+│     type (Borrow/Booking)   │
+└─────────────────────────────┘
+
+
+
+ACCOUNT_ACTION
+┌─────────────────────────────┐
+│       ACCOUNT_ACTION        │
+├─────────────────────────────┤
+│ PK  action_id               │
+│ FK  student_id              │
+│     action_type             │
+│     timestamp               │
+│     details                 │
+└─────────────────────────────┘
+

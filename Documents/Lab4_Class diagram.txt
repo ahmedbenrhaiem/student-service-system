@@ -1,0 +1,126 @@
+
+
+STUDENT CLASS
++--------------------------------+
+|         Student                |
++--------------------------------+
+| - studentId: int              |
+| - firstName: String           |
+| - lastName: String            |
+| - email: String               |
+| - passwordHash: String        |
+| - isBlocked: boolean          |
++--------------------------------+
+| +register(email, pw): void     |
+| +login(email, pw): boolean     |
+| +logout(): void                |
+| +editProfile(): void           |
+| +resetPassword(): void         |
+| +deleteAccount(): void         |
+| +isLoginBlocked(): boolean     |
++--------------------------------+
+
+
+SUBJECT CLASS
++--------------------------------+
+|         Subject                |
++--------------------------------+
+| - subjectId: int              |
+| - name: String                |
+| - description: String         |
+| - lecturer: String            |
+| - semester: String            |
+| - scheduleTime: String        |
++--------------------------------+
+| +getDetails(): String          |
++--------------------------------+
+
+
+ENROLLMENT CLASS
++--------------------------------+
+|         Enrollment             |
++--------------------------------+
+| - enrollmentId: int           |
+| - student: Student            |
+| - subject: Subject            |
+| - enrollDate: Date            |
++--------------------------------+
+| +enroll(): void                |
+| +unenroll(): void              |
++--------------------------------+
+
+
+GRADE CLASS
++--------------------------------+
+|         Grade                  |
++--------------------------------+
+| - gradeId: int                |
+| - student: Student            |
+| - subject: Subject            |
+| - value: String               |
+| - gradeDate: Date             |
+| - gradedBy: String            |
++--------------------------------+
+| +viewGrade(): String           |
++--------------------------------+
+
+TimetableEntry Class
++--------------------------------+
+|      TimetableEntry            |
++--------------------------------+
+| - entryId: int                |
+| - student: Student            |
+| - subject: Subject            |
+| - day: String                 |
+| - timeSlot: String            |
++--------------------------------+
+| +viewTimetable(): void         |
++--------------------------------+
+
+
+TuitionPayment Class
++--------------------------------+
+|       TuitionPayment           |
++--------------------------------+
+| - paymentId: int              |
+| - student: Student            |
+| - amount: float               |
+| - paymentDate: Date           |
+| - semester: String            |
+| - status: String              |
++--------------------------------+
+| +getPaymentDetails(): String   |
+| +getPaymentList(): List        |
++--------------------------------+
+
+
+LibraryRecord Class
++--------------------------------+
+|        LibraryRecord           |
++--------------------------------+
+| - recordId: int               |
+| - student: Student            |
+| - itemTitle: String           |
+| - borrowDate: Date            |
+| - dueDate: Date               |
+| - status: String              |
+| - type: String (Borrow/Booking)|
++--------------------------------+
+| +getBorrowHistory(): List      |
++--------------------------------+
+
+
+
+AccountAction Class
++--------------------------------+
+|        AccountAction           |
++--------------------------------+
+| - actionId: int               |
+| - student: Student            |
+| - actionType: String          |
+| - timestamp: Date             |
+| - details: String             |
++--------------------------------+
+| +logAction(type, details): void|
++--------------------------------+
+
