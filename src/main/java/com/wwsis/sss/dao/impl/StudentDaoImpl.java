@@ -1,7 +1,7 @@
 package com.wwsis.sss.dao.impl;
 
 import com.wwsis.sss.dao.StudentDao;
-import com.wwsis.sss.entity.Student;
+import com.wwsis.sss.model.Student;
 import org.springframework.stereotype.Repository;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
