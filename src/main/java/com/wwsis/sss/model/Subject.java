@@ -1,4 +1,4 @@
-package pl.wwsis.sss.model;
+package com.wwsis.sss.model;
 
 import javax.persistence.*;
 
